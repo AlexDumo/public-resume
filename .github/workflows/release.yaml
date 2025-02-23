@@ -33,6 +33,9 @@ jobs:
             fi
           done
 
+      - name: Ensure tags are fetched
+        run: git fetch --tags --force
+
       - name: Get latest tag and increment
         id: tag
         run: |
