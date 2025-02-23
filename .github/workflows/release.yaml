@@ -22,7 +22,7 @@ jobs:
               resume_type=$(echo "$file" | grep -oE "(Music|Software) Resume")
 
               if [[ -n "$resume_type" ]]; then
-                new_name="Alexander_Dumouchelle_$resume_type.pdf"
+                new_name="Alexander_Dumouchelle_$resume_type_Resume_public.pdf"
                 mv "$file" "$new_name"
                 echo "Renamed $file to $new_name"
               else
@@ -36,15 +36,25 @@ jobs:
       - name: Get latest tag and increment
         id: tag
         run: |
-          latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
-          IFS='.' read -r -a parts <<< "${latest_tag//v/}"
-          major=${parts[0]}
-          minor=${parts[1]}
-          patch=${parts[2]}
-          new_patch=$((patch + 1))
-          new_tag="v$major.$minor.$new_patch"
-          echo "new_tag=$new_tag" >> $GITHUB_ENV
-          echo "Generated new tag: $new_tag"
+          # Get the latest tag
+          latest_tag=$(git describe --tags --abbrev=0 2>/dev/null)
+
+          # If no tags exist, start from v0.1.0
+          if [[ -z "$latest_tag" ]]; then
+              new_tag="v0.1.0"
+          else
+              # Extract major, minor, and patch numbers (assumes format vX.Y.Z)
+              IFS='.' read -r -a parts <<< "${latest_tag//v/}"
+              major=${parts[0]}
+              minor=${parts[1]}
+              patch=${parts[2]}
+
+              # Increment the patch version
+              patch=$((patch + 1))
+
+              # Create the new tag
+              export new_tag="v$major.$minor.$patch"
+          fi
 
       - name: Release to public repo
         uses: softprops/action-gh-release@v2
