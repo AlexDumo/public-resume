@@ -36,33 +36,22 @@ jobs:
       - name: Ensure tags are fetched
         run: git fetch --tags --force
 
-      - name: Get latest tag and increment
-        id: tag
+      - name: Get Latest Tag and Increment
         run: |
-          # Get the latest tag
-          latest_tag=$(git describe --tags --abbrev=0 2>/dev/null)
-
-          # If no tags exist, start from v0.1.0
-          if [[ -z "$latest_tag" ]]; then
-              new_tag="v0.1.0"
-          else
-              # Extract major, minor, and patch numbers (assumes format vX.Y.Z)
-              IFS='.' read -r -a parts <<< "${latest_tag//v/}"
-              major=${parts[0]}
-              minor=${parts[1]}
-              patch=${parts[2]}
-
-              # Increment the patch version
-              patch=$((patch + 1))
-
-              # Create the new tag
-              export new_tag="v$major.$minor.$patch"
-          fi
+          latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.1.0")
+          IFS='.' read -r -a parts <<< "${latest_tag//v/}"
+          major=${parts[0]:-0}
+          minor=${parts[1]:-1}
+          patch=${parts[2]:-0}
+          patch=$((patch + 1))
+          new_tag="v$major.$minor.$patch"
+          echo "New tag: $new_tag"
+          echo "new_tag=$new_tag" >> $GITHUB_ENV
 
       - name: Release to public repo
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.new_tag }}
-          files: "*.public.*"
+          files: "*.*"
           generate_release_notes: false
           make_latest: true
