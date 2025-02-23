@@ -1,0 +1,22 @@
+name: Release a CV
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  render-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Release to public repo
+        uses: softprops/action-gh-release@v2
+        with:
+          files: "*.public.*"
+          generate_release_notes: false
+          make_latest: true
