@@ -36,22 +36,16 @@ jobs:
       - name: Ensure tags are fetched
         run: git fetch --tags --force
 
-      - name: Get Latest Tag and Increment
-        run: |
-          latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.1.0")
-          IFS='.' read -r -a parts <<< "${latest_tag//v/}"
-          major=${parts[0]:-0}
-          minor=${parts[1]:-1}
-          patch=${parts[2]:-0}
-          patch=$((patch + 1))
-          new_tag="v$major.$minor.$patch"
-          echo "New tag: $new_tag"
-          echo "new_tag=$new_tag" >> $GITHUB_ENV
+      - name: Get next version
+        uses: reecetech/version-increment@2024.10.1
+        id: version
+        with:
+          use_api: true
 
       - name: Release to public repo
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ env.new_tag }}
+          tag_name: ${{ steps.version.outputs.version }}
           files: "*.*"
           generate_release_notes: false
           make_latest: true
