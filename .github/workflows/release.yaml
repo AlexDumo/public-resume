@@ -14,6 +14,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Rename Resume File (Preserving Type)
+        run: |
+          for file in *Resume*.public.pdf; do
+            if [[ -f "$file" ]]; then
+              # Extracts "Music" or "Software" from the filename
+              resume_type=$(echo "$file" | grep -oE "(Music|Software) Resume")
+
+              if [[ -n "$resume_type" ]]; then
+                new_name="Alexander_Dumouchelle_$resume_type.pdf"
+                mv "$file" "$new_name"
+                echo "Renamed $file to $new_name"
+              else
+                echo "Could not determine resume type for $file"
+              fi
+            else
+              echo "No matching file found."
+            fi
+          done
+
       - name: Get latest tag and increment
         id: tag
         run: |
