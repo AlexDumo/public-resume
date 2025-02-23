@@ -19,10 +19,10 @@ jobs:
           for file in *Resume*.public.pdf; do
             if [[ -f "$file" ]]; then
               # Extracts "Music" or "Software" from the filename
-              resume_type=$(echo "$file" | grep -oE "(Music|Software) Resume")
+              resume_type=$(echo "$file" | grep -oE "(Music|Software)")
 
               if [[ -n "$resume_type" ]]; then
-                new_name="Alexander_Dumouchelle_$resume_type_Resume_public.pdf"
+                new_name="Alexander_Dumouchelle_${resume_type}_Resume_Public.pdf"
                 mv "$file" "$new_name"
                 echo "Renamed $file to $new_name"
               else
