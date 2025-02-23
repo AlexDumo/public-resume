@@ -1,0 +1,147 @@
+cv:
+  name: Alexander Dumouchelle
+  location: Ashburn, VA
+  email: alexdumo@openmarch.com
+  website: https://alexdumo.com
+  social_networks:
+    - network: LinkedIn
+      username: AlexDumo
+    - network: GitHub
+      username: AlexDumo
+  sections:
+    summary:
+      - I'm a software and machine learning engineer who is always excited to take on new challenges. I thrive in fast-paced environments with a dedicated team. I've worked on projects ranging from machine learning to full-stack web development. In addition, I'm also an involved teacher and performer with a love for music and education.
+    education:
+      - institution: James Madison University
+        area: Computer Science & Independent Scholars
+        degree: BS
+        location: Harrisonburg, VA
+        start_date: 2019-08
+        end_date: 2023-05
+        highlights:
+          - "**GPA 3.65 / 4.0** - 169 credits - avg 20 credits/semester"
+          - "**Minors** in Music, Music Industry, and Honors Interdisciplinary Studies"
+          - "**President's and Dean's List** - 6 of 8 semesters"
+          - "**Drum Major** - JMU Marching Royal Dukes 500+ member band"
+    experience:
+      - company: Accenture Federal Services
+        position: Software and Machine Learning Engineer
+        location: Arlington, VA
+        start_date: 2023-08
+        end_date: present
+        highlights:
+          - Lead full-stack developer for an internal data labeling accelerator
+          - Increased labeling efficiency by 80% with Python and Docker-based automation
+          - Trained computer vision models for image restoration and artifact classification
+          - Customized diverse datasets of > 300k images to train robust and flexible models
+          - Implemented Docker to containerize and streamline machine learning pipeline
+          - Worked on three projects simultaneously, balancing deadlines and responsibility
+      - company: The Cadets Drum and Bugle Corps
+        position: Administrative Staff
+        location: Erie, VA
+        start_date: 2023-05
+        end_date: 2023-08
+        highlights:
+          - Resolved and prevented logistical issues on a national tour
+          - Constant pressure involving a high degree of accountability and self-guidance
+          - Often the only person assigned to critical issues
+    independent_projects:
+      - company: OpenMarch
+        position: "Founder and Lead Developer"
+        location: "[*GitHub Repo*](https://github.com/OpenMarch/OpenMarch)[*OpenMarch.com*](https://openmarch.com/)"
+        start_date: 2023-08
+        end_date: present
+        highlights:
+          - Built a free, open-source app to introduce competition in the marching arts
+          - Developed hands-on technical expertise and product management skills
+          - Led a remote team of volunteers, applying agile development practices
+          - Partnered with organizations and companies to expand industry adoption
+          - Collected user stories from 300+ designers and thousands of users
+          - Designed a performant SQLite database with automatic history tracking
+          - Bootstrapped funding through merchandise sales and marketing
+    technical_skills:
+      - label: Languages
+        details: Python, Typescript, HTML, CSS, C, C++, Java, SQL
+      - label: Frameworks and Libraries
+        details: React, Pytorch, Django, Next.js, Node.js, Electron, Tailwind
+      - label: Tools and Techniques
+        details: AWS (S3, EC2), Computer Vision, Git, Linux, Docker, OOP, Agile, RESTful APIs
+    interests:
+      - label: Teaching
+        details: High school marching band and drum corps instructor (200+ members), private music lessons
+      - label: Performing
+        details: Brass band, solo competitions, community ensembles
+
+design:
+  theme: classic
+  font: Source Sans 3
+  font_size: 10pt
+  page_size: letterpaper
+  color: "#6c04c7"
+  disable_external_link_icons: false
+  disable_page_numbering: true
+  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  disable_last_updated_date: true
+  last_updated_date_style: Last updated on TODAY
+  header_font_size: 30 pt
+  text_alignment: justified
+  seperator_between_connections: ""
+  use_icons_for_connections: true
+  margins:
+    page:
+      top: 1 cm
+      bottom: 1 cm
+      left: 2 cm
+      right: 2 cm
+    section_title:
+      top: 0.3 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0.2 cm
+      vertical_between: 0.2 cm
+      date_and_location_width: 4.5 cm
+      education_degree_width: 1 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0.4 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 0.3 cm
+      bottom: 0.3 cm
+      horizontal_between_connections: 0.3 cm
+
+locale_catalog:
+  phone_number_format: national
+  date_style: "MONTH_ABBREVIATION YEAR"
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+  month: month
+  months: months
+  year: year
+  years: years
+  present: Present
+  to: "-"
