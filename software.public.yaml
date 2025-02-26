@@ -44,11 +44,12 @@ cv:
         highlights:
           - "**Product Development**: Built with a focus on speed and simplicity using React, SQLite, and Electron."
           - "**Community Engagement**: Manage a thriving Discord community to gather feedback and foster collaboration."
-          - "**Business & Marketing**: Launched merchandise to support OpenMarch’s growth, handling branding and sales."
+          - "**Business & Marketing**: Launched merchandise to support OpenMarch’s growth, overseeing branding and sales."
           - "**Technical Leadership**: Led development while balancing feature scope, performance, and user experience."
           - "**Strategic Partnerships**: Collaborated with industry companies that expand OpenMarch’s reach and knowledge."
           # - "**Mission-Driven Impact**: Advocated for accessibility in the marching arts by creating a free drill design tool."
           - "**Future Proofed**: Kept costs low with no server expenses and a web-based stack, ensuring long-term support."
+          - "**Battle Tested**: In it's first two months, OpenMarch was used to design 50+ shows in addition to my own school's."
       # - company: OpenMarch
       #   position: "Founder and Lead Developer"
       #   location: "[*GitHub Repo*](https://github.com/OpenMarch/OpenMarch)[*OpenMarch.com*](https://openmarch.com/)"
@@ -63,17 +64,17 @@ cv:
       #     - Designed a performant SQLite database with automatic history tracking
       #     - Bootstrapped funding through merchandise sales and marketing
     technical_skills:
-      - label: Languages
-        details: Python, Ruby, Typescript, HTML, CSS, C, C++, Java, SQL
+      # - label: Languages
+      #   details: Python, Ruby, Typescript, HTML, CSS, C, C++, Java, SQL
       - label: Frameworks and Libraries
-        details: React, Pytorch, Django, Next.js, Node.js, Electron, Tailwind
+        details: React, Pytorch, Django, Next.js, Node.js, Electron, Tailwind, FastAPI, Vite
       - label: Tools and Techniques
         details: AWS (S3, EC2), Computer Vision, Git, Linux, Docker, FP, OOP, Agile, RESTful APIs
     interests:
       - label: Teaching
-        details: High school marching band and drum corps instructor (200+ members), private music lessons
+        details: High school marching band and drum corps instructor (200+ members), show and drill design
       - label: Performing
-        details: Brass band, solo competitions, community ensembles
+        details: Brass band, solo competitions, and community ensembles
 
 design:
   theme: classic
