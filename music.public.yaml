@@ -44,7 +44,7 @@ cv:
         start_date: 2024
         end_date: present
         highlights:
-          - Visual lead, drill writer, and designers
+          - Visual lead, drill writer, and designer
     marching experience:
       - company: The Cadets Drum and Bugle Corps
         position: Performer
@@ -91,14 +91,19 @@ cv:
         end_date: 2022
         highlights:
           - Participated in an ensemble primarily for vocal majors
-    independent_projects:
-      - company: OpenMarch
-        position: "Founder and Creator"
-        location: "[*GitHub Repo*](https://github.com/OpenMarch/OpenMarch)[*OpenMarch.com*](https://openmarch.com/)"
-        start_date: 2023-08
-        end_date: present
+    volunteering_and_entrepreneurship:
+      - name: OpenMarch - *Founder & Lead Developer*
+        start-date: 2023-07
+        end-date: present
+        summary: Founder of OpenMarch, a community-driven, open-source drill design tool aimed at making marching band drill writing more accessible. OpenMarch exists to lower the barrier to entry for young designers and educators who lack access to expensive software. I balance this passion project alongside my full-time work, dedicating countless hours to coding, managing product development, engaging with the marching arts community, traveling for networking events, and fostering an open-source ecosystem. My work blends technical innovation with a mission to support and grow the activity through accessibility and collaboration.
         highlights:
-          - Free desktop app to make drill writing accessible to students and band directors
+          - "**Product Development**: Built with a focus on speed and simplicity using React, SQLite, and Electron."
+          - "**Community Engagement**: Manage a thriving Discord community to gather feedback and foster collaboration."
+          - "**Business & Marketing**: Launched merchandise to support OpenMarch’s growth, handling branding and sales."
+          - "**Technical Leadership**: Led development while balancing feature scope, performance, and user experience."
+          - "**Strategic Partnerships**: Collaborated with industry companies that expand OpenMarch’s reach and knowledge."
+          # - "**Mission-Driven Impact**: Advocated for accessibility in the marching arts by creating a free drill design tool."
+          - "**Future Proofed**: Kept costs low with no server expenses and a web-based stack, ensuring long-term support."
     awards and recognition:
       - label: Director's Award for Distinguished Service
         details: The Cadets 2022 Season
@@ -114,45 +119,18 @@ cv:
 
 design:
   theme: classic
-  font: Source Sans 3
-  font_size: 10pt
-  page_size: letterpaper
-  color: "#6c04c7"
-  disable_external_link_icons: false
-  disable_page_numbering: true
-  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  disable_last_updated_date: true
-  last_updated_date_style: Last updated on TODAY
-  header_font_size: 30 pt
-  text_alignment: justified
-  seperator_between_connections: ""
-  use_icons_for_connections: true
-  margins:
-    page:
-      top: 1 cm
-      bottom: 1 cm
-      left: 2 cm
-      right: 2 cm
-    section_title:
-      top: 0.3 cm
-      bottom: 0.2 cm
-    entry_area:
-      left_and_right: 0.2 cm
-      vertical_between: 0.2 cm
-      date_and_location_width: 4.5 cm
-      education_degree_width: 1 cm
-    highlights_area:
-      top: 0.10 cm
-      left: 0.4 cm
-      vertical_between_bullet_points: 0.10 cm
-    header:
-      vertical_between_name_and_connections: 0.3 cm
-      bottom: 0.3 cm
-      horizontal_between_connections: 0.5 cm
 
-locale_catalog:
+  colors:
+    text: black
+    section_titles: "#6c04c7" # Mapped from color
+    links: "#6c04c7"
+    connections: "#6c04c7"
+    name: "#6c04c7"
+
+locale:
+  language: en
   phone_number_format: national
-  date_style: "MONTH_ABBREVIATION YEAR"
+  date_template: "MONTH_ABBREVIATION YEAR"
   abbreviations_for_months:
     - Jan
     - Feb
