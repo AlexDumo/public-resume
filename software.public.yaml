@@ -30,10 +30,11 @@ cv:
         start_date: 2023-08
         end_date: present
         highlights:
+          - Product architect for human-in-the-loop app to retrain an anomaly detection model
+          - Challenged to turn complex dataflows into simple UIs for non-technical operators
           - Lead full-stack developer for an internal data labeling accelerator
           - Increased labeling efficiency by 80% with Python and Docker-based automation
           - Trained computer vision models for image restoration and artifact classification
-          - Customized diverse datasets of > 300k images to train robust and flexible models
           - Managed DAG implementation of computer vision pipeline with 30+ containers
           - Worked on three projects simultaneously, balancing deadlines and responsibility
     volunteering_and_entrepreneurship:
@@ -67,9 +68,9 @@ cv:
       # - label: Languages
       #   details: Python, Ruby, Typescript, HTML, CSS, C, C++, Java, SQL
       - label: Frameworks and Libraries
-        details: React, Pytorch, Django, Next.js, Node.js, Electron, Tailwind, FastAPI, Vite
+        details: React, Pytorch, Django, Next.js, Node.js, Electron, Tailwind, FastAPI
       - label: Tools and Techniques
-        details: AWS (S3, EC2), Computer Vision, Git, Linux, Docker, FP, OOP, Agile, RESTful APIs
+        details: AWS (S3, EC2), Computer Vision, CI/CD, Linux, Docker, FP, OOP, Agile, RESTful APIs
     interests:
       - label: Teaching
         details: High school marching band and drum corps instructor (200+ members), show and drill design
