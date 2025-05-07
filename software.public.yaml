@@ -72,10 +72,10 @@ cv:
       - label: Tools and Techniques
         details: AWS (S3, EC2), Computer Vision, CI/CD, Linux, Docker, FP, OOP, Agile, RESTful APIs
     interests:
-      - label: Teaching
-        details: High school marching band and drum corps instructor (200+ members), show and drill design
-      - label: Performing
-        details: Brass band, solo competitions, and community ensembles
+      - label: Teaching and performing
+        details: High school marching band and drum corps instructor (200+ members), show and drill design, brass band
+      # - label: Performing
+      #   details: Brass band, solo competitions, and community ensembles
 
 design:
   theme: classic
