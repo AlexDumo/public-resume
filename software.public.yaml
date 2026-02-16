@@ -1,16 +1,16 @@
 cv:
   name: Alexander Dumouchelle
-  location: Ashburn, VA
+  location: Sterling, VA
   email: alexdumo@openmarch.com
-  website: https://AlexDumo.com
+  website: https://alexdumo.com
   social_networks:
     - network: LinkedIn
       username: AlexDumo
-  #   - network: GitHub
-  #     username: AlexDumo
+    - network: GitHub
+      username: AlexDumo
   sections:
     summary:
-      - I'm a software and machine learning engineer who is always excited to take on new challenges. I thrive in fast-paced environments with a dedicated team. I've worked on projects ranging from computer vision automation to full-stack web development. In addition, I'm also an involved teacher and performer with a love for music and education.
+      - I'm a software and machine learning engineer who is always excited to take on new challenges. I thrive in fast-paced environments with a dedicated team. I've worked on projects ranging from machine learning to full-stack web development. In addition, I'm also an involved teacher and performer with a love for music and education.
     education:
       - institution: James Madison University
         area: Computer Science & Independent Scholars
@@ -25,72 +25,94 @@ cv:
           - "**Drum Major** - JMU Marching Royal Dukes - 500+ members"
     experience:
       - company: Accenture Federal Services
-        position: Software, ML, and Data Management Engineer
+        position: Full-Stack Software and AI/ML Compute Engineer
         location: Arlington, VA
         start_date: 2023-08
         end_date: present
         highlights:
-          - Product architect for human-in-the-loop app to retrain an anomaly detection model
-          - Challenged to turn complex dataflows into simple UIs for non-technical operators
-          - Lead full-stack developer for an internal data labeling accelerator
+          - Consistently improved performance of legacy web apps while delivering features
+          - Emphasized discipline in the React rendering lifecycle for smooth performance
+          - Designed and implemented full-stack apps for training/querying custom CV models
+          - Lead development of multiple greenfield projects for accelerating data labeling
+          - AWS admin for production applications (user auth, databases, deployment)
           - Increased labeling efficiency by 80% with Python and Docker-based automation
-          - Trained computer vision models for image restoration and artifact classification
-          - Managed DAG implementation of computer vision pipeline with 30+ containers
-          - Worked on three projects simultaneously, balancing deadlines and responsibility
-    volunteering_and_entrepreneurship:
-      - name: OpenMarch - *Founder & Lead Developer*
-        start-date: 2023-07
-        end-date: present
-        summary: Founder of [OpenMarch](https://openmarch.com/), a community-driven, open-source drill design tool aimed at making marching band drill writing more accessible. OpenMarch exists to lower the barrier to entry for young designers and educators who lack access to expensive software. I balance this passion project alongside my full-time work, dedicating countless hours to coding, managing product development, engaging with the marching arts community, traveling for networking events, and fostering an open-source ecosystem. My work blends technical innovation with a mission to support and grow the activity through accessibility and collaboration.
+      - company: The Cadets Drum and Bugle Corps
+        position: Administrative Staff
+        location: Erie, VA
+        start_date: 2023-05
+        end_date: 2023-08
         highlights:
-          - "**Product Development**: Built with a focus on speed and simplicity using React, SQLite, and Electron."
-          - "**Community Engagement**: Manage a thriving Discord community to gather feedback and foster collaboration."
-          - "**Business & Marketing**: Launched merchandise to support OpenMarch’s growth, overseeing branding and sales."
-          - "**Technical Leadership**: Led development while balancing feature scope, performance, and user experience."
-          - "**Strategic Partnerships**: Collaborated with industry companies that expand OpenMarch’s reach and knowledge."
-          # - "**Mission-Driven Impact**: Advocated for accessibility in the marching arts by creating a free drill design tool."
-          - "**Future Proofed**: Kept costs low with no server expenses and a web-based stack, ensuring long-term support."
-          - "**Battle Tested**: In it's first two months, OpenMarch was used to design 50+ shows in addition to my own school's."
-      # - company: OpenMarch
-      #   position: "Founder and Lead Developer"
-      #   location: "[*GitHub Repo*](https://github.com/OpenMarch/OpenMarch)[*OpenMarch.com*](https://openmarch.com/)"
-      #   start_date: 2023-08
-      #   end_date: present
-      #   highlights:
-      #     - Built a free, open-source app to introduce competition in the marching arts
-      #     - Developed hands-on technical expertise and product management skills
-      #     - Led a remote team of volunteers, applying agile development practices
-      #     - Partnered with organizations and companies to expand industry adoption
-      #     - Collected user stories from 300+ designers and thousands of users
-      #     - Designed a performant SQLite database with automatic history tracking
-      #     - Bootstrapped funding through merchandise sales and marketing
+          - Resolved and prevented logistical issues on a national tour
+          - Constant pressure involving a high degree of accountability and self-guidance
+          - Often the only person assigned to critical issues
+    independent_projects:
+      - company: OpenMarch
+        position: "Founder and Lead Developer"
+        location: "[*GitHub Repo*](https://github.com/OpenMarch/OpenMarch)[*OpenMarch.com*](https://openmarch.com/)"
+        start_date: 2023-08
+        end_date: present
+        highlights:
+          - Built a free, open-source app to introduce competition in the marching arts
+          - More than 300 marching bands designed their show with OpenMarch in Fall 2025
+          - Lead a team of 11 volunteer developers, strategists, and marketers
+          - Attended and presented at multiple national music education conferences
+          - Collected user stories from 300+ designers and thousands of users
+          - Designed performant, local-first, application to work on low-end machines
+          - Bootstrapped funding through merchandise sales and marketing
     technical_skills:
-      # - label: Languages
-      #   details: Python, Ruby, Typescript, HTML, CSS, C, C++, Java, SQL
+      - label: Languages
+        details: Python, Typescript, HTML, CSS, C, C++, Java, SQL
       - label: Frameworks and Libraries
-        details: React, Pytorch, Django, Next.js, Node.js, Electron, Tailwind, FastAPI
+        details: React, Django, Next.js, Ruby on Rails, Electron, Astro
       - label: Tools and Techniques
-        details: AWS (S3, EC2), Computer Vision, CI/CD, Linux, Docker, FP, OOP, Agile, RESTful APIs
+        details: AWS (S3, EC2), Computer Vision, Git, Linux, Docker, OOP, Agile, RESTful APIs
     interests:
-      - label: Teaching and performing
-        details: High school marching band and drum corps instructor (200+ members), show and drill design. Perform in brass band, solo competitions, and community ensembles
-      # - label: Performing
-      #   details: Brass band, solo competitions, and community ensembles
+      - label: Teaching
+        details: High school marching band and drum corps instructor (200+ members), private music lessons
+      - label: Performing
+        details: Brass band, solo competitions, community ensembles
 
 design:
   theme: classic
+  font: Source Sans 3
+  font_size: 10pt
+  page_size: letterpaper
+  color: "#6c04c7"
+  disable_external_link_icons: false
+  disable_page_numbering: true
+  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  disable_last_updated_date: true
+  last_updated_date_style: Last updated on TODAY
+  header_font_size: 30 pt
+  text_alignment: justified
+  seperator_between_connections: ""
+  use_icons_for_connections: true
+  margins:
+    page:
+      top: 1 cm
+      bottom: 1 cm
+      left: 2 cm
+      right: 2 cm
+    section_title:
+      top: 0.3 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0.2 cm
+      vertical_between: 0.2 cm
+      date_and_location_width: 4.5 cm
+      education_degree_width: 1 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0.4 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 0.3 cm
+      bottom: 0.3 cm
+      horizontal_between_connections: 0.3 cm
 
-  colors:
-    text: black
-    section_titles: "#6c04c7" # Mapped from color
-    links: "#6c04c7"
-    connections: "#6c04c7"
-    name: "#6c04c7"
-
-locale:
-  language: en
+locale_catalog:
   phone_number_format: national
-  date_template: "MONTH_ABBREVIATION YEAR"
+  date_style: "MONTH_ABBREVIATION YEAR"
   abbreviations_for_months:
     - Jan
     - Feb
